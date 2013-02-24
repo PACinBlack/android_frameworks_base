@@ -19,6 +19,7 @@
               android:layout_height="match_parent"
               android:orientation="horizontal"
               android:paddingEnd="8dip"
+              android:background="?android:attr/actionBarItemBackground"
               android:enabled="false">
 
     <ImageView android:id="@android:id/up"
