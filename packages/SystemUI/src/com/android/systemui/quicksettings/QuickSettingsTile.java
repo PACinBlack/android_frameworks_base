@@ -16,8 +16,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.android.systemui.R;
-import com.android.systemui.statusbar.phone.QuickSettingsController;
+
 import com.android.systemui.statusbar.BaseStatusBar;
+import com.android.systemui.statusbar.phone.PhoneStatusBar;
+import com.android.systemui.statusbar.phone.QuickSettingsController;
 import com.android.systemui.statusbar.phone.QuickSettingsContainerView;
 import com.android.systemui.statusbar.phone.QuickSettingsTileView;
 
@@ -104,7 +106,7 @@ public class QuickSettingsTile implements OnClickListener {
         mOnClick.onClick(v);
         ContentResolver resolver = mContext.getContentResolver();
         boolean shouldCollapse = Settings.System.getInt(resolver, Settings.System.QS_COLLAPSE_PANEL, 0) == 1;
-        if (shouldCollapse || this instanceof DesktopModeTile) {
+        if (shouldCollapse || this instanceof DesktopModeTile || this instanceof HybridTile) {
             mQsc.mBar.collapseAllPanels(true);
         }
     }
