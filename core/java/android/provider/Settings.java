@@ -1858,7 +1858,7 @@ public final class Settings {
          */
         public static final String MODE_RINGER_STREAMS_AFFECTED = "mode_ringer_streams_affected";
 
-         /**
+        /**
           * Determines which streams are affected by mute. The
           * stream type's bit should be set to 1 if it should be muted when a mute request
           * is received.
@@ -2601,6 +2601,13 @@ public final class Settings {
          */
         public static final String QS_DYNAMIC_WIFI = "qs_dyanmic_wifi";
 
+         /**
+         * Quick Settings Quick Pulldown if no notifications are present
+         *
+         * @hide
+         */
+        public static final String QS_NO_NOTIFICATION_PULLDOWN = "qs_no_notification_pulldown";
+
         /**
          * Quick Settings Quick Pulldown
          *
@@ -2614,6 +2621,13 @@ public final class Settings {
          * @hide
          */
         public static final String QS_COLLAPSE_PANEL = "qs_collapse_panel";
+
+        /**
+         * Quick Settings Disable Panel
+         *
+         * @hide
+         */
+        public static final String QS_DISABLE_PANEL = "qs_disable_panel";
 
         /**
          * Use the Notification Power Widget? (Who wouldn't!)
